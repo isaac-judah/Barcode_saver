@@ -204,6 +204,11 @@ body {
   justify-content: center;
 }
 
+.input-row button.icon-btn-sm {
+  width: 30px;
+  height: 30px;
+}
+
 .input-row button:hover {
   background: #3f3f46;
 }

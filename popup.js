@@ -355,15 +355,11 @@ function setupEventListeners() {
     deleteCategory(state.active);
   };
 
-  document.getElementById("addBarcodeBtn").onclick = () => {
-    const input = document.getElementById("barcodeInput");
-    addBarcode(input.value.trim());
-    input.value = "";
-  };
-
   document.getElementById("barcodeInput").addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-      document.getElementById("addBarcodeBtn").click();
+      const input = document.getElementById("barcodeInput");
+      addBarcode(input.value.trim());
+      input.value = "";
     }
   });
 
